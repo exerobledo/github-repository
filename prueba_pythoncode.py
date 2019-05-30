@@ -24,7 +24,8 @@ def ejpprueba():
      return r
 
 #prueba devolver solo el array
-if __name__ == '__main__':
+def pruebaPut():
+    if __name__ == '__main__':
     r = ejpprueba()
     print(r)
     prueba = json.loads(r)
@@ -33,6 +34,8 @@ if __name__ == '__main__':
     z = requests.put('http://localhost:1337/users', data = sendList)
     if requests.ConnectTimeout('http://localhost:1337/users').response == "404":
         print(test_error)
+
+    pass
 
 #Prueba realizar put
 #print(r)

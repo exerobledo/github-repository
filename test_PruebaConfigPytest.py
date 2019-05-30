@@ -1,6 +1,6 @@
-import pruebapytest
+import prueba_pythoncode
 
 def test__add():
     "assert is None"
-def test__ejprueba():
-    assert pruebapytest.ejpprueba()
+def test_prueba():
+    assert prueba_pythoncode.ejpprueba() == 0
